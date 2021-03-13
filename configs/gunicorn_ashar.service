@@ -1,0 +1,26 @@
+[Unit]
+Description=gunicorn daemon for ashar project
+Requires=gunicorn_ashar.socket
+After=network.target
+
+[Service]
+PermissionsStartOnly=True
+User=ubuntu
+Group=www-data
+RuntimeDirectory=gunicorn
+RuntimeDirectoryMode=0775
+PIDFile=/run/gunicorn/pid
+WorkingDirectory=/home/ubuntu/ashar
+ExecStart=/home/ubuntu/ashar/env/bin/gunicorn \
+          --access-logfile /home/ubuntu/ashar/logs/access.log \
+          --error-logfile /home/ubuntu/ashar/logs/error.log \
+          --pid /run/gunicorn/pid   \
+          --env DJANGO_SETTINGS_MODULE=ashar_app.settings_prod \
+          --workers 3 \
+          --bind unix:/run/gunicorn/ashar_socket ashar_app.wsgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
