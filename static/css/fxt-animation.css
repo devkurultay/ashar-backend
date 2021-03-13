@@ -1,0 +1,886 @@
+body .has-animation .translate-zoomout-0 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+body .has-animation .translate-zoomout-5 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.05);
+}
+
+body .has-animation .translate-zoomout-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.1);
+}
+
+body .has-animation .translate-zoomout-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.2);
+}
+
+body .has-animation .translate-zoomout-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.3);
+}
+
+body .has-animation .translate-zoomout-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.4);
+}
+
+body .has-animation .translate-zoomout-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+}
+
+body .has-animation .translate-left-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10%);
+}
+
+body .has-animation .translate-left-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20%);
+}
+
+body .has-animation .translate-left-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-30%);
+}
+
+body .has-animation .translate-left-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-40%);
+}
+
+body .has-animation .translate-left-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%);
+}
+
+body .has-animation .translate-left-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-75%);
+}
+
+body .has-animation .translate-left-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+body .has-animation .translate-right-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10%);
+}
+
+body .has-animation .translate-right-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20%);
+}
+
+body .has-animation .translate-right-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30%);
+}
+
+body .has-animation .translate-right-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(40%);
+}
+
+body .has-animation .translate-right-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50%);
+}
+
+body .has-animation .translate-right-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(75%);
+}
+
+body .has-animation .translate-right-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+}
+
+body .has-animation .translate-top-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10%);
+}
+
+body .has-animation .translate-top-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20%);
+}
+
+body .has-animation .translate-top-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30%);
+}
+
+body .has-animation .translate-top-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40%);
+}
+
+body .has-animation .translate-top-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+}
+
+body .has-animation .translate-top-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-75%);
+}
+
+body .has-animation .translate-top-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+body .has-animation .translate-bottom-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%);
+}
+
+body .has-animation .translate-bottom-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+}
+
+body .has-animation .translate-bottom-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30%);
+}
+
+body .has-animation .translate-bottom-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40%);
+}
+
+body .has-animation .translate-bottom-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50%);
+}
+
+body .has-animation .translate-bottom-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(75%);
+}
+
+body .has-animation .translate-bottom-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+}
+
+body .has-animation .translate-bottom-left-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10%) translateX(-10%);
+}
+
+body .has-animation .translate-bottom-left-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%) translateX(-20%);
+}
+
+body .has-animation .translate-bottom-left-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30%) translateX(-30%);
+}
+
+body .has-animation .translate-bottom-left-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40%) translateX(-40%);
+}
+
+body .has-animation .translate-bottom-left-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50%) translateX(-50%);
+}
+
+body .has-animation .translate-bottom-left-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(75%) translateX(-75%);
+}
+
+body .has-animation .translate-bottom-left-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%) translateX(-100%);
+}
+
+body .has-animation .translate-top-left-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10%) translateX(-10%);
+}
+
+body .has-animation .translate-top-left-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20%) translateX(-20%);
+}
+
+body .has-animation .translate-top-left-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30%) translateX(-30%);
+}
+
+body .has-animation .translate-top-left-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40%) translateX(-40%);
+}
+
+body .has-animation .translate-top-left-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+body .has-animation .translate-top-left-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-75%) translateX(-75%);
+}
+
+body .has-animation .translate-top-left-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%) translateX(-100%);
+}
+
+body .has-animation .translate-top-right-10 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10%) translateX(10%);
+}
+
+body .has-animation .translate-top-right-20 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20%) translateX(20%);
+}
+
+body .has-animation .translate-top-right-30 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30%) translateX(30%);
+}
+
+body .has-animation .translate-top-right-40 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40%) translateX(40%);
+}
+
+body .has-animation .translate-top-right-50 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%) translateX(50%);
+}
+
+body .has-animation .translate-top-right-75 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-75%) translateX(75%);
+}
+
+body .has-animation .translate-top-right-100 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%) translateX(100%);
+}
+
+body .transition-10,
+body .transition-20,
+body .transition-30,
+body .transition-40,
+body .transition-50,
+body .transition-100,
+body .transition-150,
+body .transition-200,
+body .transition-250,
+body .transition-300,
+body .transition-350,
+body .transition-400,
+body .transition-450,
+body .transition-500,
+body .transition-550,
+body .transition-600,
+body .transition-650,
+body .transition-700,
+body .transition-750,
+body .transition-800,
+body .transition-850,
+body .transition-900,
+body .transition-950,
+body .transition-1000 {
+    transition: all 0.01s ease-out;
+    transition-delay: 0.5s;
+}
+
+body.loaded .has-animation.active-animation .translate-zoomout-0,
+body.loaded .has-animation.active-animation .translate-zoomout-5,
+body.loaded .has-animation.active-animation .translate-zoomout-10,
+body.loaded .has-animation.active-animation .translate-zoomout-20,
+body.loaded .has-animation.active-animation .translate-zoomout-30,
+body.loaded .has-animation.active-animation .translate-zoomout-40,
+body.loaded .has-animation.active-animation .translate-zoomout-50 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+body.loaded .has-animation.active-animation .translate-left-10,
+body.loaded .has-animation.active-animation .translate-left-20,
+body.loaded .has-animation.active-animation .translate-left-30,
+body.loaded .has-animation.active-animation .translate-left-40,
+body.loaded .has-animation.active-animation .translate-left-50,
+body.loaded .has-animation.active-animation .translate-left-75,
+body.loaded .has-animation.active-animation .translate-left-100,
+body.loaded .has-animation.active-animation .translate-right-10,
+body.loaded .has-animation.active-animation .translate-right-20,
+body.loaded .has-animation.active-animation .translate-right-30,
+body.loaded .has-animation.active-animation .translate-right-40,
+body.loaded .has-animation.active-animation .translate-right-50,
+body.loaded .has-animation.active-animation .translate-right-75,
+body.loaded .has-animation.active-animation .translate-right-100,
+body.loaded .has-animation.active-animation .translate-top-10,
+body.loaded .has-animation.active-animation .translate-top-20,
+body.loaded .has-animation.active-animation .translate-top-30,
+body.loaded .has-animation.active-animation .translate-top-40,
+body.loaded .has-animation.active-animation .translate-top-50,
+body.loaded .has-animation.active-animation .translate-top-75,
+body.loaded .has-animation.active-animation .translate-top-100,
+body.loaded .has-animation.active-animation .translate-bottom-10,
+body.loaded .has-animation.active-animation .translate-bottom-20,
+body.loaded .has-animation.active-animation .translate-bottom-30,
+body.loaded .has-animation.active-animation .translate-bottom-40,
+body.loaded .has-animation.active-animation .translate-bottom-50,
+body.loaded .has-animation.active-animation .translate-bottom-75,
+body.loaded .has-animation.active-animation .translate-bottom-100,
+body.loaded .has-animation.active-animation .translate-top-left-10,
+body.loaded .has-animation.active-animation .translate-top-left-20,
+body.loaded .has-animation.active-animation .translate-top-left-30,
+body.loaded .has-animation.active-animation .translate-top-left-40,
+body.loaded .has-animation.active-animation .translate-top-left-50,
+body.loaded .has-animation.active-animation .translate-top-left-75,
+body.loaded .has-animation.active-animation .translate-top-left-100,
+body.loaded .has-animation.active-animation .translate-top-right-10,
+body.loaded .has-animation.active-animation .translate-top-right-20,
+body.loaded .has-animation.active-animation .translate-top-right-30,
+body.loaded .has-animation.active-animation .translate-top-right-40,
+body.loaded .has-animation.active-animation .translate-top-right-50,
+body.loaded .has-animation.active-animation .translate-top-right-75,
+body.loaded .has-animation.active-animation .translate-top-right-100,
+body.loaded .has-animation.active-animation .translate-bottom-left-10,
+body.loaded .has-animation.active-animation .translate-bottom-left-20,
+body.loaded .has-animation.active-animation .translate-bottom-left-30,
+body.loaded .has-animation.active-animation .translate-bottom-left-40,
+body.loaded .has-animation.active-animation .translate-bottom-left-50,
+body.loaded .has-animation.active-animation .translate-bottom-left-75,
+body.loaded .has-animation.active-animation .translate-bottom-left-100 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) translateX(0);
+}
+
+body.loaded .transition-10 {
+    transition: cubic-bezier(0, 1, 1, 1) 0.1s, opacity 0.3s;
+}
+
+body.loaded .transition-20 {
+    transition: cubic-bezier(0, 1, 1, 1) 0.2s, opacity 0.3s;
+}
+
+body.loaded .transition-30 {
+    transition: cubic-bezier(0, 1, 1, 1) 0.3s, opacity 0.3s;
+}
+
+body.loaded .transition-40 {
+    transition: cubic-bezier(0, 1, 1, 1) 0.4s, opacity 0.3s;
+}
+
+body.loaded .transition-50 {
+    transition: cubic-bezier(0, 1, 1, 1) 0.5s, opacity 0.3s;
+}
+
+body.loaded .transition-100 {
+    transition: cubic-bezier(0, 1, 1, 1) 1s, opacity 0.3s;
+}
+
+body.loaded .transition-150 {
+    transition: cubic-bezier(0, 1, 1, 1) 1.5s, opacity 0.3s;
+}
+
+body.loaded .transition-200 {
+    transition: cubic-bezier(0, 1, 1, 1) 2s, opacity 0.3s;
+}
+
+body.loaded .transition-250 {
+    transition: cubic-bezier(0, 1, 1, 1) 2.5s, opacity 0.3s;
+}
+
+body.loaded .transition-300 {
+    transition: cubic-bezier(0, 1, 1, 1) 3s, opacity 0.3s;
+}
+
+body.loaded .transition-350 {
+    transition: cubic-bezier(0, 1, 1, 1) 3.5s, opacity 0.3s;
+}
+
+body.loaded .transition-400 {
+    transition: cubic-bezier(0, 1, 1, 1) 4s, opacity 0.3s;
+}
+
+body.loaded .transition-450 {
+    transition: cubic-bezier(0, 1, 1, 1) 4.5s, opacity 0.3s;
+}
+
+body.loaded .transition-500 {
+    transition: cubic-bezier(0, 1, 1, 1) 5s, opacity 0.3s;
+}
+
+body.loaded .transition-550 {
+    transition: cubic-bezier(0, 1, 1, 1) 5.5s, opacity 0.3s;
+}
+
+body.loaded .transition-600 {
+    transition: cubic-bezier(0, 1, 1, 1) 6s, opacity 0.3s;
+}
+
+body.loaded .transition-650 {
+    transition: cubic-bezier(0, 1, 1, 1) 6.5s, opacity 0.3s;
+}
+
+body.loaded .transition-700 {
+    transition: cubic-bezier(0, 1, 1, 1) 7s, opacity 0.3s;
+}
+
+body.loaded .transition-750 {
+    transition: cubic-bezier(0, 1, 1, 1) 7.5s, opacity 0.3s;
+}
+
+body.loaded .transition-800 {
+    transition: cubic-bezier(0, 1, 1, 1) 8s, opacity 0.3s;
+}
+
+body.loaded .transition-850 {
+    transition: cubic-bezier(0, 1, 1, 1) 8.5s, opacity 0.3s;
+}
+
+body.loaded .transition-900 {
+    transition: cubic-bezier(0, 1, 1, 1) 9s, opacity 0.3s;
+}
+
+body.loaded .transition-950 {
+    transition: cubic-bezier(0, 1, 1, 1) 9.5s, opacity 0.3s;
+}
+
+body.loaded .transition-1000 {
+    transition: cubic-bezier(0, 1, 1, 1) 10s, opacity 0.3s;
+}
+
+body.loaded .transition-delay-0 {
+    transition-delay: 0s;
+}
+
+body.loaded .transition-delay-10 {
+    transition-delay: 0.01s;
+}
+
+body.loaded .transition-delay-20 {
+    transition-delay: 0.02s;
+}
+
+body.loaded .transition-delay-30 {
+    transition-delay: 0.03s;
+}
+
+body.loaded .transition-delay-40 {
+    transition-delay: 0.04s;
+}
+
+body.loaded .transition-delay-50 {
+    transition-delay: 0.05s;
+}
+
+body.loaded .transition-delay-100 {
+    transition-delay: 0.1s;
+}
+
+body.loaded .transition-delay-200 {
+    transition-delay: 0.2s;
+}
+
+body.loaded .transition-delay-300 {
+    transition-delay: 0.3s;
+}
+
+body.loaded .transition-delay-400 {
+    transition-delay: 0.4s;
+}
+
+body.loaded .transition-delay-500 {
+    transition-delay: 0.5s;
+}
+
+body.loaded .transition-delay-600 {
+    transition-delay: 0.6s;
+}
+
+body.loaded .transition-delay-700 {
+    transition-delay: 0.7s;
+}
+
+body.loaded .transition-delay-800 {
+    transition-delay: 0.8s;
+}
+
+body.loaded .transition-delay-900 {
+    transition-delay: 0.9s;
+}
+
+body.loaded .transition-delay-1000 {
+    transition-delay: 1s;
+}
+
+body.loaded .transition-delay-1100 {
+    transition-delay: 1.1s;
+}
+
+body.loaded .transition-delay-1200 {
+    transition-delay: 1.2s;
+}
+
+body.loaded .transition-delay-1300 {
+    transition-delay: 1.3s;
+}
+
+body.loaded .transition-delay-1400 {
+    transition-delay: 1.4s;
+}
+
+body.loaded .transition-delay-1500 {
+    transition-delay: 1.5s;
+}
+
+body.loaded .transition-delay-1600 {
+    transition-delay: 1.6s;
+}
+
+body.loaded .transition-delay-1700 {
+    transition-delay: 1.7s;
+}
+
+body.loaded .transition-delay-1800 {
+    transition-delay: 1.8s;
+}
+
+body.loaded .transition-delay-1900 {
+    transition-delay: 1.9s;
+}
+
+body.loaded .transition-delay-2000 {
+    transition-delay: 2s;
+}
+
+body.loaded .transition-delay-2100 {
+    transition-delay: 2.1s;
+}
+
+body.loaded .transition-delay-2200 {
+    transition-delay: 2.2s;
+}
+
+body.loaded .transition-delay-2300 {
+    transition-delay: 2.3s;
+}
+
+body.loaded .transition-delay-2400 {
+    transition-delay: 2.4s;
+}
+
+body.loaded .transition-delay-2500 {
+    transition-delay: 2.5s;
+}
+
+body.loaded .transition-delay-2600 {
+    transition-delay: 2.6s;
+}
+
+body.loaded .transition-delay-2700 {
+    transition-delay: 2.7s;
+}
+
+body.loaded .transition-delay-2800 {
+    transition-delay: 2.8s;
+}
+
+body.loaded .transition-delay-2900 {
+    transition-delay: 2.9s;
+}
+
+body.loaded .transition-delay-3000 {
+    transition-delay: 3s;
+}
+
+body.loaded .transition-delay-3100 {
+    transition-delay: 3.1s;
+}
+
+body.loaded .transition-delay-3200 {
+    transition-delay: 3.2s;
+}
+
+body.loaded .transition-delay-3300 {
+    transition-delay: 3.3s;
+}
+
+body.loaded .transition-delay-3400 {
+    transition-delay: 3.4s;
+}
+
+body.loaded .transition-delay-3500 {
+    transition-delay: 3.5s;
+}
+
+body.loaded .transition-delay-3600 {
+    transition-delay: 3.6s;
+}
+
+body.loaded .transition-delay-3700 {
+    transition-delay: 3.7s;
+}
+
+body.loaded .transition-delay-3800 {
+    transition-delay: 3.8s;
+}
+
+body.loaded .transition-delay-3900 {
+    transition-delay: 3.9s;
+}
+
+body.loaded .transition-delay-4000 {
+    transition-delay: 4s;
+}
+
+body.loaded .transition-delay-4100 {
+    transition-delay: 4.1s;
+}
+
+body.loaded .transition-delay-4200 {
+    transition-delay: 4.2s;
+}
+
+body.loaded .transition-delay-4300 {
+    transition-delay: 4.3s;
+}
+
+body.loaded .transition-delay-4400 {
+    transition-delay: 4.4s;
+}
+
+body.loaded .transition-delay-4500 {
+    transition-delay: 4.5s;
+}
+
+body.loaded .transition-delay-4600 {
+    transition-delay: 4.6s;
+}
+
+body.loaded .transition-delay-4700 {
+    transition-delay: 4.7s;
+}
+
+body.loaded .transition-delay-4800 {
+    transition-delay: 4.8s;
+}
+
+body.loaded .transition-delay-4900 {
+    transition-delay: 4.9s;
+}
+
+body.loaded .transition-delay-5000 {
+    transition-delay: 5s;
+}
+
+body.loaded .transition-delay-5100 {
+    transition-delay: 5.1s;
+}
+
+body.loaded .transition-delay-5200 {
+    transition-delay: 5.2s;
+}
+
+body.loaded .transition-delay-5300 {
+    transition-delay: 5.3s;
+}
+
+body.loaded .transition-delay-5400 {
+    transition-delay: 5.4s;
+}
+
+body.loaded .transition-delay-5500 {
+    transition-delay: 5.5s;
+}
+
+body.loaded .transition-delay-5600 {
+    transition-delay: 5.6s;
+}
+
+body.loaded .transition-delay-5700 {
+    transition-delay: 5.7s;
+}
+
+body.loaded .transition-delay-5800 {
+    transition-delay: 5.8s;
+}
+
+body.loaded .transition-delay-5900 {
+    transition-delay: 5.9s;
+}
+
+body.loaded .transition-delay-6000 {
+    transition-delay: 6s;
+}
+
+@media only screen and (min-width: 992px) {
+    body .fxt-page-content .has-animation .translate-bottom {
+        transform: translateY(200px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.01s ease-out;
+    }
+    body .fxt-page-content .has-animation .delay-100,
+    body .fxt-page-content .has-animation .delay-200,
+    body .fxt-page-content .has-animation .delay-300,
+    body .fxt-page-content .has-animation .delay-400,
+    body .fxt-page-content .has-animation .delay-500,
+    body .fxt-page-content .has-animation .delay-600,
+    body .fxt-page-content .has-animation .delay-700,
+    body .fxt-page-content .has-animation .delay-800,
+    body .fxt-page-content .has-animation .delay-900,
+    body .fxt-page-content .has-animation .delay-1000,
+    body .fxt-page-content .has-animation .delay-1100,
+    body .fxt-page-content .has-animation .delay-1200,
+    body .fxt-page-content .has-animation .delay-1300,
+    body .fxt-page-content .has-animation .delay-1400,
+    body .fxt-page-content .has-animation .delay-1500,
+    body .fxt-page-content .has-animation .delay-1600,
+    body .fxt-page-content .has-animation .delay-1700,
+    body .fxt-page-content .has-animation .delay-1800,
+    body .fxt-page-content .has-animation .delay-1900,
+    body .fxt-page-content .has-animation .delay-2000 {
+        transition-delay: 0.8s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .translate-bottom {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: cubic-bezier(0, 1, 1, 1) 1.3s, opacity 0.3s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-100 {
+        transition-delay: 0.1s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-200 {
+        transition-delay: 0.2s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-300 {
+        transition-delay: 0.3s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-400 {
+        transition-delay: 0.4s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-500 {
+        transition-delay: 0.5s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-600 {
+        transition-delay: 0.6s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-700 {
+        transition-delay: 0.7s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-800 {
+        transition-delay: 0.8s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-900 {
+        transition-delay: 0.9s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1000 {
+        transition-delay: 1s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1100 {
+        transition-delay: 1.1s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1200 {
+        transition-delay: 1.2s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1300 {
+        transition-delay: 1.3s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1400 {
+        transition-delay: 1.4s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1500 {
+        transition-delay: 1.5s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1600 {
+        transition-delay: 1.6s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1700 {
+        transition-delay: 1.7s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1800 {
+        transition-delay: 1.8s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-1900 {
+        transition-delay: 1.9s;
+    }
+    body.open-sidebar .fxt-page-content .has-animation.active-animation .delay-2000 {
+        transition-delay: 2s;
+    }
+}

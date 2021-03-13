@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ashar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/favicon.png' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Custom Animation CSS -->
+    <link rel="stylesheet" href="{%  static 'css/fxt-animation.css' %}">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{%  static 'style.css' %}">
+</head>
+
+<body>
+    <!-- Page Loader Start -->
+    <div id="preloader"></div>
+    <!-- Page Loader End -->
+    <div class="wrapper">
+        <!-- Main Body Area Start Here -->
+        <div class="fxt-template has-animation">
+            <div class="fxt-figure-holder">
+                <div class="fxt-banner" data-bg-image="{% static 'media/figure/banner.png' %}"></div>
+            </div>
+            <div class="fxt-main-content d-flex justify-content-around">
+                <div class="fxt-logo">
+                    <a href="#"><h2>Ashar</h2></a>
+                </div>
+                <div>
+                    <h1 class="fxt-main-title">Your account has been successfully verified</h1>
+                    <a href="http://35.224.200.162/"><button class="btn btn-primary">GO TO SHOP</button></a>
+                </div>
+
+
+                <div class="fxt-copyright">&copy; 2020 Ashar — All Rights Reserved.</div>
+            </div>
+        </div>
+        <!-- Main Body Area End Here -->
+    </div>
+    <!-- jquery-->
+    <script src="{% static 'js/jquery-3.5.0.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{%  static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Imagesloaded js -->
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <!-- Custom Js -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
