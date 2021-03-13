@@ -1,0 +1,8 @@
+[Unit]
+Description=gunicorn socket for ashar project
+
+[Socket]
+ListenStream=/run/gunicorn/ashar_socket
+
+[Install]
+WantedBy=sockets.target
