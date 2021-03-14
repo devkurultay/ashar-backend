@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     #custom apps
     'user',
-    'term'
+    'term',
+    'comment',
 
 ]
 SITE_ID = 1
