@@ -14,6 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/accounts/', include('user.urls')),
     path('api/v1/', include('term.urls')),
+    path('api/v1/likes/', include('like.urls')),
     path('docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     path('swagger-docs/', schema_view),
     path('social-accounts/', include('allauth.urls'), name='socialaccount_signup'),
