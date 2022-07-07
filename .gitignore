@@ -158,4 +158,5 @@ Thumbs.db #thumbnail cache on Windows
 
 .idea/
 
+.env
 # End of https://www.toptal.com/developers/gitignore/api/django
