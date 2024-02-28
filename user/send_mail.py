@@ -6,7 +6,7 @@ from django_rest_passwordreset.signals import reset_password_token_created
 
 from ashar_app.settings import DOMAIN,  RESET_PASSWORD_DOMAIN
 from django.utils.html import strip_tags
-from ashar_app.settings import REDIRECT_DOMEN
+from ashar_app.settings import REDIRECT_DOMAIN
 
 
 def send_confirmation_email(user):
@@ -38,7 +38,7 @@ def send_activation_mail(user):
     subject = f'Активация аккаунта на сайте маркетплейс'
     body = f'Благодарим Вас за регистрацию на нашем сайте'\
            f'Для активации аккаунта пройдите по ссылке:'\
-           f'{REDIRECT_DOMEN}/v1/accounts/activate/{user.activation_code}/'
+           f'{REDIRECT_DOMAIN}/v1/accounts/activate/{user.activation_code}/'
     from_email = 'alymbekovdastan1@gmail.com'
     recipients = [user.email]
     mail.send_mail(subject=subject, message=body, from_email=from_email, recipient_list=recipients, fail_silently=False)

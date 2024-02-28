@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
     'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.github',
     #custom apps
     'user',
     'term',
@@ -167,12 +168,12 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DOMAIN = config("DOMAIN")
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = True
+EMAIL_HOST = "sandbox.smtp.mailtrap.io"
+EMAIL_USE_TLS = False
 EMAIL_PORT = 587
-EMAIL_HOST_USER = config("ACCOUNT")
-EMAIL_HOST_PASSWORD = config("PASSWORD")
-REDIRECT_DOMEN = config('REDIRECT_DOMEN')
+EMAIL_HOST_USER = config("MAILTRAP_USER")
+EMAIL_HOST_PASSWORD = config("MAILTRAP_PASSWORD")
+REDIRECT_DOMAIN = config('REDIRECT_DOMAIN')
 RESET_PASSWORD_DOMAIN = config("RESET_PASSWORD_DOMAIN")
 
 
