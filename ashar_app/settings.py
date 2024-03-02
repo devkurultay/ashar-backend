@@ -167,15 +167,18 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 
 DOMAIN = config("DOMAIN")
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "sandbox.smtp.mailtrap.io"
-EMAIL_USE_TLS = False
-EMAIL_PORT = 587
-EMAIL_HOST_USER = config("SMTP_USER")
-EMAIL_HOST_PASSWORD = config("SMTP_PASSWORD")
 REDIRECT_DOMAIN = config('REDIRECT_DOMAIN')
 RESET_PASSWORD_DOMAIN = config("RESET_PASSWORD_DOMAIN")
 
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = config("SMTP_HOST")
+EMAIL_HOST_USER = config("SMTP_USER")
+EMAIL_HOST_PASSWORD = config("SMTP_PASSWORD")
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_PORT = 587
+FROM_EMAIL = config("FROM_EMAIL")
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
