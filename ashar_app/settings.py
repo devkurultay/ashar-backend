@@ -29,6 +29,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(",")
 
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
 
 # Application definition
 
