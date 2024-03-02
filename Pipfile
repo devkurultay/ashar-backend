@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==4.0"
+django = "==4.1"
 django-allauth = "==0.45.0"
 django-cors-headers = "==3.7.0"
 django-rest-passwordreset = "==1.2.1"
 djangorestframework-simplejwt = "==4.6.0"
-psycopg2-binary = "==2.9.9"
+psycopg-binary = "*"
 djangorestframework = "*"
 python-decouple = "*"
 pytils = "*"
