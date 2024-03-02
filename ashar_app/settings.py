@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     #lib
     'rest_framework',
     "corsheaders",
-    'rest_framework_swagger',
     'django_rest_passwordreset',
     "allauth",
     "allauth.account",
