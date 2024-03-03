@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "==4.2.7"
 django-allauth = "==0.45.0"
-django-cors-headers = "==3.7.0"
+django-cors-headers = "*"
 django-rest-passwordreset = "*"
 djangorestframework-simplejwt = "*"
 psycopg-binary = "*"
