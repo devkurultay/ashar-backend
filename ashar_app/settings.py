@@ -29,6 +29,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(",")
 
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
 
 # Application definition
 
@@ -44,13 +46,13 @@ INSTALLED_APPS = [
     #lib
     'rest_framework',
     "corsheaders",
-    'rest_framework_swagger',
     'django_rest_passwordreset',
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.google",
     'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.github',
     #custom apps
     'user',
     'term',
@@ -59,13 +61,19 @@ INSTALLED_APPS = [
 
 ]
 SITE_ID = 1
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -151,7 +159,6 @@ TIME_ZONE = 'Asia/Bishkek'
 
 USE_I18N = True
 
-USE_L10N = True
 
 USE_TZ = True
 
@@ -166,15 +173,18 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 
 DOMAIN = config("DOMAIN")
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = config("ACCOUNT")
-EMAIL_HOST_PASSWORD = config("PASSWORD")
-REDIRECT_DOMEN = config('REDIRECT_DOMEN')
+REDIRECT_DOMAIN = config('REDIRECT_DOMAIN')
 RESET_PASSWORD_DOMAIN = config("RESET_PASSWORD_DOMAIN")
 
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = config("SMTP_HOST")
+EMAIL_HOST_USER = config("SMTP_USER")
+EMAIL_HOST_PASSWORD = config("SMTP_PASSWORD")
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_PORT = 587
+FROM_EMAIL = config("FROM_EMAIL")
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
