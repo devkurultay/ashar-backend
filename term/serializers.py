@@ -73,10 +73,24 @@ class TermSerializer(serializers.ModelSerializer):
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
+
         representation['other_language_examples'] = OtherLanguageExampleRepresentationSerializer(
-            instance.other_lang_examples.all(), many=True, context=self.context).data
+            instance.other_lang_examples.all(),
+            many=True,
+            context=self.context
+        ).data
+
         representation['translation_suggestions'] = SuggestionRepresentationSerializer(
-            instance.suggestions.only('author', 'suggested_translation'), many=True, context=self.context).data
+            instance.suggestions.only('author', 'suggested_translation'),
+            many=True,
+            context=self.context
+        ).data
+
+        representation['category'] = CategorySerializer(
+            instance.category,
+            context=self.context
+        ).data
+
         return representation
 
 

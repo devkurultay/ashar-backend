@@ -7,7 +7,7 @@ User = get_user_model()
 
 
 class Category(models.Model):
-    title = models.CharField(max_length=150, unique=True, verbose_name='Имя категории')
+    title = models.CharField(max_length=150, unique=True, verbose_name='Категориянын аты')
     slug = models.SlugField(primary_key=True)
 
     def __str__(self):
