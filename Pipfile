@@ -17,6 +17,8 @@ coreapi = "*"
 cryptography = "*"
 
 [dev-packages]
+factory-boy = "*"
+assertpy = "*"
 
 [requires]
 python_version = "3.12"
