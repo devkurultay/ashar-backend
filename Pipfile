@@ -17,6 +17,7 @@ cryptography = "*"
 drf-yasg = "*"
 dj-database-url = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 factory-boy = "*"
