@@ -22,6 +22,8 @@ COPY . /code
 
 RUN python manage.py collectstatic --noinput
 
+ENV DJANGO_LOG_LEVEL WARNING
+
 EXPOSE 8000
 
 CMD ["gunicorn", "--bind", ":8000", "--workers", "2", "ashar_app.wsgi"]
