@@ -1,0 +1,47 @@
+name: Ashar CI
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16.2
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: ashar-project
+        ports:
+          - 5432:5432
+        # needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        cache: 'pipenv'
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install --user pipenv
+        pipenv sync -d
+        pipenv run pip install setuptools wheel
+    - name: Run migrations
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      run: pipenv run python manage.py migrate
+    - name: Run Tests
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      run: |
+        pipenv run python manage.py test
+
