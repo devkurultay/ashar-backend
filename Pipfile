@@ -16,6 +16,7 @@ pytils = "*"
 cryptography = "*"
 drf-yasg = "*"
 dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 factory-boy = "*"
