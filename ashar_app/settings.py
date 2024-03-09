@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(",")
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost').split(",")
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
@@ -111,11 +111,11 @@ WSGI_APPLICATION = 'ashar_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT', cast=int)
+        'NAME': config('DB_NAME', default='ashar-project'),
+        'USER': config('DB_USER', default='postgres'),
+        'PASSWORD': config('DB_PASSWORD', default='postgres'),
+        'HOST': config('DB_HOST', default='127.0.0.1'),
+        'PORT': config('DB_PORT', default='5432')
     }
 }
 
@@ -173,19 +173,19 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 
-DOMAIN = config("DOMAIN")
-REDIRECT_DOMAIN = config('REDIRECT_DOMAIN')
-RESET_PASSWORD_DOMAIN = config("RESET_PASSWORD_DOMAIN")
+DOMAIN = config("DOMAIN", default='localhost:8000')
+REDIRECT_DOMAIN = config('REDIRECT_DOMAIN', default='localhost:8000')
+RESET_PASSWORD_DOMAIN = config('RESET_PASSWORD_DOMAIN', default='localhost:8000')
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
-EMAIL_HOST = config("SMTP_HOST")
-EMAIL_HOST_USER = config("SMTP_USER")
-EMAIL_HOST_PASSWORD = config("SMTP_PASSWORD")
+EMAIL_HOST = config("SMTP_HOST", default='localhost')
+EMAIL_HOST_USER = config("SMTP_USER", default='smtp')
+EMAIL_HOST_PASSWORD = config("SMTP_PASSWORD", default='password')
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 EMAIL_PORT = 587
-FROM_EMAIL = config("FROM_EMAIL")
+FROM_EMAIL = config("FROM_EMAIL", default='ashar@example.com')
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
