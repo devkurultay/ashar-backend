@@ -38,10 +38,12 @@ jobs:
     - name: Run migrations
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        DATABASE_URL: postgresql://postgres:postgres@localhost/ashar-project
       run: pipenv run python manage.py migrate
     - name: Run Tests
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        DATABASE_URL: postgresql://postgres:postgres@localhost/ashar-project
       run: |
         pipenv run python manage.py test
 
