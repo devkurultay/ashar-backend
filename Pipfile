@@ -13,8 +13,8 @@ djangorestframework-simplejwt = "*"
 djangorestframework = "*"
 python-decouple = "*"
 pytils = "*"
-coreapi = "*"
 cryptography = "*"
+drf-yasg = "*"
 
 [dev-packages]
 factory-boy = "*"

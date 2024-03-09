@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework',
     "corsheaders",
     'django_rest_passwordreset',
+    'drf_yasg',
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
