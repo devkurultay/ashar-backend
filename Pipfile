@@ -15,6 +15,7 @@ python-decouple = "*"
 pytils = "*"
 cryptography = "*"
 drf-yasg = "*"
+dj-database-url = "*"
 
 [dev-packages]
 factory-boy = "*"
