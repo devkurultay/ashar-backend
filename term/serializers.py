@@ -102,6 +102,9 @@ class TermUpdateDeleteSerializer(serializers.ModelSerializer):
         fields = ('id', 'other_lang_examples', 'term', 'description', 'category')
 
     def validate(self, attrs):
+        category = attrs.get('category')
+        if not category:
+            return attrs
         category_slug = attrs.get('category').slug
         if not Category.objects.filter(slug=category_slug).exists():
             raise serializers.ValidationError("category not found")
