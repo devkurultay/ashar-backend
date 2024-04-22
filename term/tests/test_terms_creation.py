@@ -16,7 +16,7 @@ class TermCreationTestCase(APITestCase):
         self.client.credentials(HTTP_AUTHORIZATION = f'JWT {access_token}')
 
 
-    def test_unauthorized(self):
+    def test_unauthenticated(self):
         self.client.credentials(HTTP_AUTHORIZATION = f'JWT wrong_access_token')
 
         data = {

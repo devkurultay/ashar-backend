@@ -33,6 +33,7 @@ class TermListCreateView(generics.ListCreateAPIView):
 
 
 class TermDetailView(generics.RetrieveAPIView):
+    permission_classes = (permissions.AllowAny, )
     queryset = Term.objects.select_related('author', 'category')
     serializer_class = TermSerializer
 

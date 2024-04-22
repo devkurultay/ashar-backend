@@ -46,4 +46,3 @@ jobs:
         DATABASE_URL: postgresql://postgres:postgres@localhost/ashar-project
       run: |
         pipenv run python manage.py test
-
